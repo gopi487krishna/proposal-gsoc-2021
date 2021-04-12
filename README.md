@@ -5,7 +5,7 @@
 
 **Course**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;: Computer Science Engineering
 
-**Degree Program**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: B.TECH (Bachelor of Technology)
+**Degree Program** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: B.TECH (Bachelor of Technology)
 
 **Email**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: krishnagopi487.github@outlook.com
 
