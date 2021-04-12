@@ -23,7 +23,7 @@ I like to keep myself punctual and plan my day in the morning itself 🙂. For *
 
 Weekends:
 
-**10:00am - 2:00pm**&emsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morning Adventures (Coding)
+**10:00am - 2:00pm**&emsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morning Adventures (Coding)
 
 **4:00pm  - 5:00pm**&emsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evening Adventures  (Coding)
 
