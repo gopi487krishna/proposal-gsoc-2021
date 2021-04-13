@@ -419,6 +419,8 @@ During the second week and third weeks (overlapped), CI/CD will also be set up f
 
 The first 4 weeks will be spent writing the entire XML reader class and performing debugging etc. The next two weeks will be spent in generating benchmarks and finding critical hotspots and I will try to optimize that. The library used for benchmarking the code will be Google Benchmarks.
 
+After 6 weeks of development the second major milestone (M2) should be achieved
+
 
 **Phase 1 Evaluations**: 5 days (12 July - 16 July)
 
@@ -427,6 +429,9 @@ These five days will be spent answering queries and defending the decisions that
 **Phase 2**: 1 Month (16 July - 16 August)
 
 The first 3 weeks will be dedicated to writing the entire XML writer class and performing debugging etc. The next 1 week will be spent in benchmarking the code against famous libraries and finding hotspots in the code to reduce memory footprint and improve performance
+
+After 4 weeks of development the third major milestone (M3) should be achieved
+
 
 **Phase 2 Evaluations**: 7 days (16 August - 23 August)
 
