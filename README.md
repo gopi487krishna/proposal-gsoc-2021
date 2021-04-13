@@ -389,6 +389,8 @@ xml_writer.write_end_document();
 
 Instead of giving day to day activities during the GSOC period (which becomes highly granular), I would like to start at a higher level of planning and flesh it up to a reasonable point
 
+![image](https://user-images.githubusercontent.com/56198900/114567816-334ff080-9c91-11eb-8791-85d645b26dc7.png)
+
 
 There are three major milestones in Boost.XML project
 
