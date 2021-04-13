@@ -288,7 +288,7 @@ The list given below represents some of the convenience methods provided by the 
 
 **attributes()** : Returns a map of attributes with their values if a start tag has been  read
 
-**processing_instruction()** : Returns a pair containing the target and instruction
+**get_processing_instruction()** : Returns a pair containing the target and instruction
 
 **is_cdata()**: Determines if we are inside a CDATA section
 
@@ -311,7 +311,7 @@ while(!xml_reader.is_document_end()){
 	xml_reader.next();
 
 	if(xml_reader.is_processing_instruction()){
-		auto&[target,instruction] = xml_reader.processing_instruction();
+		auto[target,instruction] = xml_reader.get_processing_instruction();
 		fmt::print("Target : {}\n Instr : {}",target,instruction)
 	}
 
