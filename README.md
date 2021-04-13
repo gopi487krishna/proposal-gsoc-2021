@@ -264,35 +264,35 @@ XML reader also allows the user to query metadata through several convenience me
 
 The list given below represents some of the convenience methods provided by the reader ( The querying interface is similar to copper spice XML API. This is done to reduce the learning gradient for the user of this library (QT) ). By no means this list is exhaustive and the signatures or methods themselves are subjected to change upon further research.
 
-**at_end()** : Indicates whether the parser has reached
+- **at_end()** : Indicates whether the parser has reached
 
-**column_number()**: Returns true if at the end of the document or error has occured
+- **column_number()**: Returns true if at the end of the document or error has occured
 
-**encoding()**: Returns the encoding based on prolog or BOM mark in the file
+- **encoding()**: Returns the encoding based on prolog or BOM mark in the file
 
-**xml_version()**: Returns the xml_version in to which the document adheres to (1.0,1.1)
+- **xml_version()**: Returns the xml_version in to which the document adheres to (1.0,1.1)
 
-**error_string()** : Returns the error message associated with the parser
+- **error_string()** : Returns the error message associated with the parser
 
-**has_error()**: Determines if the parser is in halted state/fatal errored
+- **has_error()**: Determines if the parser is in halted state/fatal errored
 
-**is_document_end()**: Indicates if the parser has reached the end of the document
+- **is_document_end()**: Indicates if the parser has reached the end of the document
 
-**is_entity_reference()** : Indicates if the current token is an entity reference
+- **is_entity_reference()** : Indicates if the current token is an entity reference
 
-**is_character_reference()**: Indicates if the current token is a character reference
+- **is_character_reference()**: Indicates if the current token is a character reference
 
-**is_processing_instruction()** : Returns true if the current element is a processing instruction
+- **is_processing_instruction()** : Returns true if the current element is a processing instruction
 
-**is_standalone_document()**; Returns true if the XML document is a standalone document
+- **is_standalone_document()**; Returns true if the XML document is a standalone document
 
-**attributes()** : Returns a map of attributes with their values if a start tag has been  read
+- **attributes()** : Returns a map of attributes with their values if a start tag has been  read
 
-**get_processing_instruction()** : Returns a pair containing the target and instruction
+- **get_processing_instruction()** : Returns a pair containing the target and instruction
 
-**is_cdata()**: Determines if we are inside a CDATA section
+- **is_cdata()**: Determines if we are inside a CDATA section
 
-**cdata_text()**: Returns the text inside the current CDATA section
+- **cdata_text()**: Returns the text inside the current CDATA section
 ...
 
 **Control Methods :**
