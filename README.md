@@ -264,13 +264,11 @@ XML reader also allows the user to query metadata through several convenience me
 
 The list given below represents some of the convenience methods provided by the reader ( The querying interface is similar to copper spice XML API. This is done to reduce the learning gradient for the user of this library (QT) ). By no means this list is exhaustive and the signatures or methods themselves are subjected to change upon further research.
 
-- **at_end()** : Indicates whether the parser has reached
+- **at_end()** : Returns true if the parser has reached the end of document or errored.	
 
-- **column_number()**: Returns true if at the end of the document or error has occured
+- **encoding()**: Returns the encoding based on prolog or BOM in the file
 
-- **encoding()**: Returns the encoding based on prolog or BOM mark in the file
-
-- **xml_version()**: Returns the xml_version in to which the document adheres to (1.0,1.1)
+- **xml_version()**: Returns the xml_version to which the document adheres to (1.0,1.1)
 
 - **error_string()** : Returns the error message associated with the parser
 
@@ -296,6 +294,7 @@ The list given below represents some of the convenience methods provided by the 
 ...
 
 **Control Methods :**
+
 **next()**: Parses the input and generates the next token (along with appropriate event)
 **clear()** : Clears the parser state entirely. After calling clear the parser is new as it was default constructed
 **next_start_tag()**: Returns the next start-tag
@@ -350,7 +349,7 @@ The errors must be handled in the same way as that of the reader.
 
 **What the xml writer cannot do?**
 
-- Cannot produce a valid XML document (current it lacks the support for DTD)
+- Cannot produce a valid XML document (currently it lacks the support for DTD)
 - No support for substitution of entity references (will be given after building up the basic writer)
 
 **Basic API design**
@@ -388,7 +387,7 @@ xml_writer.write_end_document();
 
 ## PROPOSED MILESTONES AND SCHEDULE
 
-Instead of giving day to day activities during the GSOC period (which becomes highly granular), I would like to start at a higher level of planning and flesh down to a reasonable point
+Instead of giving day to day activities during the GSOC period (which becomes highly granular), I would like to start at a higher level of planning and flesh it up to a reasonable point
 
 
 There are three major milestones in Boost.XML project
@@ -405,10 +404,10 @@ During the community bonding period, the first two weeks will be spent researchi
 This involves the following activities
 
 - Deciding the feature set for both reader and writer with the mentor
-- Studying the XML specification ( A good source is annotated-xml.com) and noting down and discussing the important points with the mentor
+- Studying the XML specification ( A good source is [annotated-xml.com](https://www.xml.com/axml/axml.html)) and noting down and discussing the important points with the mentor
 - Researching and designing the external/front-facing API based on existing libraries of different ecosystems
 
-At the end of 2 weeks, the first major milestone (M1) should be achieved. This means the API for both reader and writer will be frozen and we will try our best to not make any major changes to the design in later stages. 
+At the end of 2 weeks, the first major milestone (M1) should be achieved. This means the API design for both reader and writer will be frozen and we will try our best to not make any major changes to the design in later stages. 
 
 This does not mean we are stuck with the design. As the coding starts there will be a lot of details that will unfold themselves. We will make sure to adapt them to the design after an internal review. Achieving the first milestone is simply a way to generate a basic scaffolding for the developer to keep track of what is going on.
 
@@ -423,7 +422,7 @@ The first 4 weeks will be spent writing the entire XML reader class and performi
 
 **Phase 1 Evaluations**: 5 days (12 July - 16 July)
 
-These five days will be spent answering queries and defending the decisions that will be challenged by the mentor. Based on the result changes will be made if necessary
+These five days will be spent answering queries and defending the decisions that will be challenged by the mentor. Based on the result, changes will be made if necessary
 
 **Phase 2**: 1 Month (16 July - 16 August)
 
