@@ -154,6 +154,10 @@ Earlier I only used Doxygen with Morsa MCSS framework to generate beautiful and 
 
 ## Project Proposal
 
+
+![image](https://user-images.githubusercontent.com/56198900/114570232-49f74700-9c93-11eb-8669-7cddcc5b7e87.png)
+
+
 In the current aspect of Boost.XML, the XML namespace consists of two main classes
 
 - reader
