@@ -192,6 +192,8 @@ Examples:
 
 **Diagrammatic Representation of XML::Reader**
 
+![image](https://user-images.githubusercontent.com/56198900/114573836-5a5cf100-9c96-11eb-89ad-61327aee3f7c.png)
+
 
 
 **Design Goals**:
@@ -215,8 +217,6 @@ Jumping from one automaton to another one can only occurr if the final state is 
 **Input of XML Reader**
 
 XML reader can be considered as a Turing machine that computes on an long infinite input tape over which the machine moves in a unidirectional manner
-
-// Diagram
 
 We can think of the input as a memory stream which supplies data to the reader.  Based on the availability of data in the memory stream, the XML processor processes the input data and generates the tokens.
 
