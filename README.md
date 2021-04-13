@@ -385,3 +385,53 @@ xml_writer.write_end_document();
 // Destructor can also invoke write_end_document()  automatically if required but the buffer lifetime should be greater than the writer object lifetime
 
 ```
+
+## PROPOSED MILESTONES AND SCHEDULE
+
+Instead of giving day to day activities during the GSOC period (which becomes highly granular), I would like to start at a higher level of planning and flesh down to a reasonable point
+
+
+There are three major milestones in Boost.XML project
+
+- API Design Freeze (M1)
+- Completition of xml::reader (M2)
+- Completition of xml::writer (M3)
+
+
+**Community Bonding Period**: 3weeks(17 May- 7 June)
+
+During the community bonding period, the first two weeks will be spent researching more about the reader and writer API.
+
+This involves the following activities
+
+- Deciding the feature set for both reader and writer with the mentor
+- Studying the XML specification ( A good source is annotated-xml.com) and noting down and discussing the important points with the mentor
+- Researching and designing the external/front-facing API based on existing libraries of different ecosystems
+
+At the end of 2 weeks, the first major milestone (M1) should be achieved. This means the API for both reader and writer will be frozen and we will try our best to not make any major changes to the design in later stages. 
+
+This does not mean we are stuck with the design. As the coding starts there will be a lot of details that will unfold themselves. We will make sure to adapt them to the design after an internal review. Achieving the first milestone is simply a way to generate a basic scaffolding for the developer to keep track of what is going on.
+
+
+During the second week and third weeks (overlapped), CI/CD will also be set up for ensuring cross-compatibility across different operating systems and different compilers. Along with that both boost build and cmake will be configured for the project so that the developers can easily get started with development in the future. If my mentor permits then I would also add a .devcontainer configuration along with Dockerfile for doing containerized development( This ensures that the developer working on the code will have no problems with setting up dependencies, environment, etc)
+
+
+**Phase 1**: 6 weeks(7 June- 16July)
+
+The first 4 weeks will be spent writing the entire XML reader class and performing debugging etc. The next two weeks will be spent in generating benchmarks and finding critical hotspots and I will try to optimize that. The library used for benchmarking the code will be Google Benchmarks.
+
+
+**Phase 1 Evaluations**: 5 days (12 July - 16 July)
+
+These five days will be spent answering queries and defending the decisions that will be challenged by the mentor. Based on the result changes will be made if necessary
+
+**Phase 2**: 1 Month (16 July - 16 August)
+
+The first 3 weeks will be dedicated to writing the entire XML writer class and performing debugging etc. The next 1 week will be spent in benchmarking the code against famous libraries and finding hotspots in the code to reduce memory footprint and improve performance
+
+**Phase 2 Evaluations**: 7 days (16 August - 23 August)
+
+Again as mentioned in the Phase 1 evaluations , the 7 days will be spent answering queries and defending decisions against the overall design of the library which will be challenged by the mentor. The changes will only be made after critically thinking about its consequences.
+
+
+`Astute readers might have noticed that I have not mentioned about unit test and documentation anywhere in the schedule. This is because unit tests and documentation are not seperate activities but an integral part of coding itself. I usually follow TDD (Test Driven Development) style of development. TDD is especially useful in designing libraries and API because it helps the developer see the bigger picture of what each method does. In the traditional style of development, there is a very high chance that we might code and code and eventually peform a lot of hacks in the code which might reduce the modularity, flexiblity of the library`
